@@ -11,8 +11,8 @@ Stop playing
 
 ## to do:
 * add more pics, **never enough !**
-<strike>* use more then 25 pics per board</strike>
-* enable trigger for new submissions
+* use more then 25 pics per board  
+* enable trigger for new submissions  
 
 ## Changelog  
 v0.1.0 (20-11-2017) first version  
