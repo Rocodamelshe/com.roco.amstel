@@ -1,0 +1,88 @@
+{
+    "id": "com.roco.amstel",
+    "sdk": 2,
+    "name": {
+        "en": "Amstel",
+		"nl": "Amstel"
+    },
+    "description": {
+        "en": "View a slideshow of 'our' favourite Beer",
+		"nl": "Kijk naar een fotoshow van 'onze' favoriete Bier"
+    },
+    "category": "tools",
+    "version": "0.1.1",
+    "compatibility": ">=1.5.0",
+    "author": {
+        "name": "Rocodamelshe",
+        "email": ""
+    },
+    "images": {
+        "large": "/assets/images/large.jpg",
+        "small": "/assets/images/small.jpg"
+    },
+	"flow": {
+		"triggers": [
+			{
+				"id": "new_Amstel_pic",
+				"title": {
+					"en": "There's a new Amstel pic",
+					"nl": "Er is een nieuwe Amstel foto"
+				},
+				"tokens": [
+					{
+						"name": "item",
+						"type": "string",
+						"title": {
+							"en": "latest pic",
+							"nl": "nieuwste foto"
+						}
+					},
+					{
+						"name": "pctitle",
+						"type": "string",
+						"title": {
+							"en": "pic-title",
+							"nl": "foto-naam"
+						}
+					},
+					{
+						"name": "tijd",
+						"type": "string",
+						"title": {
+							"en": "time",
+							"nl": "tijd"
+						}
+					}
+				]
+			}
+        ],
+		"actions": [
+			{
+				"id": "start_play",
+				"title": {
+					"en": "Start playing pics (delay)",
+					"nl": "start met foto's (pauze)"
+				},
+			"args": [
+						{
+							"name": "pauze",
+							"type": "number",
+							"min": "1",
+							"max": "3600",
+							"placeholder": {
+								"en": "1...3600",
+								"nl": "1...3600"
+							}
+						}
+					]
+			},
+			{
+				"id": "stop_play",
+				"title": {
+					"en": "Pauze playing pics",
+					"nl": "Pauzeer foto's"
+				}
+			}
+		]
+	}
+}
